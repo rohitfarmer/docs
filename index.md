@@ -11,4 +11,6 @@ permalink: /
 
 Assorted documentation for some commonly used software.
 
+[Back to Rohit's Homepage](https://rohitfarmer.github.io){: .btn .btn-green }
+
 *Powered by [Just the Docs](https://github.com/pmarsceill/just-the-docs)*

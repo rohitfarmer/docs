@@ -16,6 +16,16 @@ description: "R commands and packages."
 
 ---
 
+# Data Frame/Tibble
+## Split a DF/Tbl to a List of DF/Tbl
+
+The code below will split a DF/Tbl according to the values (e.g patterns) in a column and generate a named list (dictionary) of DF/Tbls. The names/keys of the list will be the same as the values used in the criteria to split the DF/Tbl.
+
+```
+split (DF, criteria)
+example: x <- ttest_hg %>% split(f = .$Pattern)
+```
+
 # Colours in R
 
 Package  

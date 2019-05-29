@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Test, Build, and Deploy Singularity using Travis CI.
-nav_order: 2
+title: Singularity Containers
+nav_order: 19
 parent: HPC
-description: "Test, Build, and Deploy Singularity using Travis CI."
+description: "Singularity containers."
 ---
 
-# Test, Build, and Deploy Singularity using Travis CI.
+# Singularity Containers
 {: .no_toc }
 
 ## Table of contents
@@ -16,8 +16,18 @@ description: "Test, Build, and Deploy Singularity using Travis CI."
 {:toc}
 
 ---
+# Singularity Build
 
-# Theory
+**Build a compressed singularity container using a recipe file.**  
+`sudo singularity build ubuntu.simg Singularity.def`
+
+**Build a writable singularity container using a recipe file.**  
+`sudo singularity build --writable ubuntu.img ubuntu.def`
+
+**Example recipe file.**  
+[https://github.com/rohitfarmer/singularity-defs](https://github.com/rohitfarmer/singularity-defs)
+
+# Test, Build, and Deploy Singularity using Travis CI.
 
 It is possible to test, build, deploy Singularity containers using [Travis CI](https://travis-ci.org) website. However, the current documentation is only to test the build success of a Singularity definition file. The idea is to spare our local computers from Singularity juicing up all the power during the build. It can also be useful if you don't have admin rights on your computer which is a must to build a container, and also if you are not on a Linux machine. However, having a Linux machine is not an absolute requirement to build a Singularity container.
 

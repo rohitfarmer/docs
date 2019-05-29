@@ -1,11 +1,11 @@
 ---
 layout: default
 title: R
-nav_order: 3
+nav_order: 18
 description: "R commands and packages."
 ---
 
-# Git/GitHub
+# R Programming Language
 {: .no_toc }
 
 ## Table of contents

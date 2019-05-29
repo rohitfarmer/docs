@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Running Jupyter on HPC.
-nav_order: 1
+nav_order: 10
 parent: HPC
 description: "Setting up Jupyter Notebook Over Tunneling on HPC."
 ---

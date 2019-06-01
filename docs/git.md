@@ -69,3 +69,26 @@ $ git remote add origin path_to_new_remote
 ```
 
 This can also be achieved by editing `.git/remotes/origin` file.
+
+# Fork a Repository and Create a Pull Request
+## To Contribute
+**Original tutorials:**  
+[https://help.github.com/en/articles/fork-a-repo](https://help.github.com/en/articles/fork-a-repo)  
+[https://help.github.com/en/articles/syncing-a-fork](https://help.github.com/en/articles/syncing-a-fork)  
+[https://help.github.com/en/articles/about-pull-requests](https://help.github.com/en/articles/about-pull-requests)  
+[https://help.github.com/en/articles/creating-a-pull-request-from-a-fork](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork)  
+
+
+* Fork a repo from repo's GitHub page.
+* Clone the forked repo to your local computer. 
+* To check for remote repository location.  
+`git remote -v`
+* To keep the local copy in sync with the original upstream repo upon pull.  
+`git remote add upstream https://github.com/bioinfobot/bioinfobot.github.io.git`
+* Fetch the branches and their respective commits from the upstream repository.     
+`git fetch upstream`
+* Check out your fork's local master branch.  
+`git checkout master`
+* Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes.  
+`git merge upstream/master`
+

@@ -18,6 +18,14 @@ description: "Linux"
 # User related
 `sudo -u nobody bash` Change the user to a desired name with a desired shell.
 
+## Add or Remove User
+Add user with a home directory: `sudo adduser --home /home/rohit rohit`  
+Delete user: `sudo deluser rohit`  
+
+## Add a User to Sudoer List
+`usermod -a -G sudo rohit`
+
+
 # Cron Jobs Log  
 `grep CRON /var/log/syslog`
 

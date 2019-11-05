@@ -67,3 +67,9 @@ More information at (https://www.tecmint.com/ps-command-examples-for-linux-proce
 `sudo apt-get install unattended-upgrades`  
 `sudo dpkg-reconfigure unattended-upgrades`  
 https://help.ubuntu.com/lts/serverguide/automatic-updates.html  
+
+# File Transfer
+## Rsync
+### Transfer Updated Files Over SSH
+rsync -h -v -r -P -t  remoteuser@remotehost:/foo/bar /foo/bar
+

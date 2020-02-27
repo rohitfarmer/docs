@@ -45,7 +45,8 @@ git config user.email "MY_NAME@example.com"
 Verify your configuration by displaying your configuration file:
 `cat .git/config`
 
-# Change Remote Origin
+# Working with Remote Repositories
+## Change Remote Origin
 
 This is useful in case the remote repository (on GitHub maybe) is moved to a different user or organisation. 
 
@@ -70,6 +71,14 @@ $ git remote add origin path_to_new_remote
 
 This can also be achieved by editing `.git/remotes/origin` file.
 
+## Add Additional Remote Repository to an Existing Local Repository
+
+```
+# First create a repo on GitHub, but do not initialize it with a readme, gitignore or a liscence file.
+
+git remote add <a name for the new remote repo> <link/path of the remote repo on GitHub>
+git push -u <name of the newly added remote repo> master
+```
 # Fork a Repository and Create a Pull Request
 ## To Contribute
 **Original tutorials:**  
